@@ -6,3 +6,6 @@ Desenvolvi em POWER BI esse report utilizando os arquivos da ANP
 fonte:
 
 https://dados.gov.br/dataset?tags=vendas&q=anp
+
+O arquivo POWER BI é o Teste_Wladiston_gitHub_Raizen.pbix
+e segue também um print do relatorio em PDF Teste_Wladiston_gitHub_Raizen.pdf
