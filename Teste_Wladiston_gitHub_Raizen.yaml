@@ -1,0 +1,2464 @@
+Version: 3.1.0
+Language: en-US
+DynamicImprovement: HighConfidence
+Entities:
+  produto:
+    Definition:
+      Binding: {Table: produtos}
+    State: Generated
+    Terms:
+    - produto: {State: Generated}
+
+  produto.cod_prod:
+    Definition:
+      Binding: {Table: produtos, Column: cod_prod}
+    State: Generated
+    Terms:
+    - cod prod: {State: Generated}
+    - cod_prod: {Type: Noun, State: Generated, Weight: 0.99}
+    - prod: {State: Generated, Weight: 0.97}
+    - cod nudge: {Type: Noun, State: Suggested, Weight: 0.485}
+    - cod poke: {Type: Noun, State: Suggested, Weight: 0.485}
+    - cod elbow: {Type: Noun, State: Suggested, Weight: 0.485}
+    - cod dig: {Type: Noun, State: Suggested, Weight: 0.485}
+    - cod jab: {Type: Noun, State: Suggested, Weight: 0.485}
+    - cod push: {Type: Noun, State: Suggested, Weight: 0.485}
+    - nudge: {Type: Noun, State: Suggested, Weight: 0.476}
+    - poke: {Type: Noun, State: Suggested, Weight: 0.476}
+    - elbow: {Type: Noun, State: Suggested, Weight: 0.476}
+    - dig: {Type: Noun, State: Suggested, Weight: 0.476}
+
+  produto.produto:
+    Definition:
+      Binding: {Table: produtos, Column: PRODUTO}
+    State: Generated
+    Terms:
+    - produto: {State: Generated}
+    - produto name: {State: Generated}
+    NameType: Name
+
+  estados_bra:
+    Definition:
+      Binding: {Table: EstadosBra}
+    State: Generated
+    Terms:
+    - estados bra: {State: Generated}
+    - estado bra: {Type: Noun, State: Generated, Weight: 0.78}
+    - EstadosBra: {Type: Noun, State: Generated, Weight: 0.99}
+
+  estados_bra.unidade_federativa:
+    Definition:
+      Binding: {Table: EstadosBra, Column: UNIDADE FEDERATIVA}
+    State: Generated
+    Terms:
+    - unidade federativa: {State: Generated}
+
+  estados_bra.un__da_federação:
+    Definition:
+      Binding: {Table: EstadosBra, Column: UN. DA FEDERAÇÃO}
+    State: Generated
+    Terms:
+    - un. da federação: {State: Generated}
+
+  vendas_oleo_combustivel_m_3_1990_2020:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Terms:
+    - vendas oleo combustivel m 3 1990 2020: {State: Generated}
+    - venda oleo combustivel m 3 1990 2020: {Type: Noun, State: Generated, Weight: 0.78}
+    - vendas-oleo-combustivel-m3-1990-2020: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.combustível:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.ano:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' ANO '}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - ' ANO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.estado:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.janeiro:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' JANEIRO '}
+    State: Generated
+    Terms:
+    - janeiro: {State: Generated}
+    - ' JANEIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.fevereiro:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' FEVEREIRO '}
+    State: Generated
+    Terms:
+    - fevereiro: {State: Generated}
+    - ' FEVEREIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.março:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' MARÇO '}
+    State: Generated
+    Terms:
+    - março: {State: Generated}
+    - ' MARÇO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.abril:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' ABRIL '}
+    State: Generated
+    Terms:
+    - abril: {State: Generated}
+    - ' ABRIL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.maio:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' MAIO '}
+    State: Generated
+    Terms:
+    - maio: {State: Generated}
+    - ' MAIO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.junho:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' JUNHO '}
+    State: Generated
+    Terms:
+    - junho: {State: Generated}
+    - ' JUNHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.julho:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' JULHO '}
+    State: Generated
+    Terms:
+    - julho: {State: Generated}
+    - ' JULHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.agosto:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' AGOSTO '}
+    State: Generated
+    Terms:
+    - agosto: {State: Generated}
+    - ' AGOSTO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.setembro:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' SETEMBRO '}
+    State: Generated
+    Terms:
+    - setembro: {State: Generated}
+    - ' SETEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.outubro:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' OUTUBRO '}
+    State: Generated
+    Terms:
+    - outubro: {State: Generated}
+    - ' OUTUBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.novembro:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' NOVEMBRO '}
+    State: Generated
+    Terms:
+    - novembro: {State: Generated}
+    - ' NOVEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.dezembro:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' DEZEMBRO '}
+    State: Generated
+    Terms:
+    - dezembro: {State: Generated}
+    - ' DEZEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_combustivel_m_3_1990_2020.total:
+    Definition:
+      Binding: {Table: vendas-oleo-combustivel-m3-1990-2020, Column: ' TOTAL '}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - ' TOTAL ': {Type: Noun, State: Generated, Weight: 0.99}
+    - aggregate: {Type: Noun, State: Suggested, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Weight: 0.714}
+
+  vendas_oleo_diesel_m_3_1990_2020:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Terms:
+    - vendas oleo diesel m 3 1990 2020: {State: Generated}
+    - venda oleo diesel m 3 1990 2020: {Type: Noun, State: Generated, Weight: 0.78}
+    - vendas-oleo-diesel-m3-1990-2020: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.combustível:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.ano:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' ANO '}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - ' ANO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.estado:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.janeiro:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' JANEIRO '}
+    State: Generated
+    Terms:
+    - janeiro: {State: Generated}
+    - ' JANEIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.fevereiro:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' FEVEREIRO '}
+    State: Generated
+    Terms:
+    - fevereiro: {State: Generated}
+    - ' FEVEREIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.março:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' MARÇO '}
+    State: Generated
+    Terms:
+    - março: {State: Generated}
+    - ' MARÇO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.abril:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' ABRIL '}
+    State: Generated
+    Terms:
+    - abril: {State: Generated}
+    - ' ABRIL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.maio:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' MAIO '}
+    State: Generated
+    Terms:
+    - maio: {State: Generated}
+    - ' MAIO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.junho:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' JUNHO '}
+    State: Generated
+    Terms:
+    - junho: {State: Generated}
+    - ' JUNHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.julho:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' JULHO '}
+    State: Generated
+    Terms:
+    - julho: {State: Generated}
+    - ' JULHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.agosto:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' AGOSTO '}
+    State: Generated
+    Terms:
+    - agosto: {State: Generated}
+    - ' AGOSTO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.setembro:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' SETEMBRO '}
+    State: Generated
+    Terms:
+    - setembro: {State: Generated}
+    - ' SETEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.outubro:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' OUTUBRO '}
+    State: Generated
+    Terms:
+    - outubro: {State: Generated}
+    - ' OUTUBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.novembro:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' NOVEMBRO '}
+    State: Generated
+    Terms:
+    - novembro: {State: Generated}
+    - ' NOVEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.dezembro:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' DEZEMBRO '}
+    State: Generated
+    Terms:
+    - dezembro: {State: Generated}
+    - ' DEZEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_oleo_diesel_m_3_1990_2020.total:
+    Definition:
+      Binding: {Table: vendas-oleo-diesel-m3-1990-2020, Column: ' TOTAL '}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - ' TOTAL ': {Type: Noun, State: Generated, Weight: 0.99}
+    - aggregate: {Type: Noun, State: Suggested, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Weight: 0.714}
+
+  vendas_etanol_hidratado_m_3_1990_2020:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Terms:
+    - vendas etanol hidratado m 3 1990 2020: {State: Generated}
+    - venda etanol hidratado m 3 1990 2020: {Type: Noun, State: Generated, Weight: 0.78}
+    - vendas-etanol-hidratado-m3-1990-2020: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.combustível:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.ano:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' ANO '}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - ' ANO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.estado:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.janeiro:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' JANEIRO '}
+    State: Generated
+    Terms:
+    - janeiro: {State: Generated}
+    - ' JANEIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.fevereiro:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' FEVEREIRO '}
+    State: Generated
+    Terms:
+    - fevereiro: {State: Generated}
+    - ' FEVEREIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.março:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' MARÇO '}
+    State: Generated
+    Terms:
+    - março: {State: Generated}
+    - ' MARÇO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.abril:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' ABRIL '}
+    State: Generated
+    Terms:
+    - abril: {State: Generated}
+    - ' ABRIL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.maio:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' MAIO '}
+    State: Generated
+    Terms:
+    - maio: {State: Generated}
+    - ' MAIO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.junho:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' JUNHO '}
+    State: Generated
+    Terms:
+    - junho: {State: Generated}
+    - ' JUNHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.julho:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' JULHO '}
+    State: Generated
+    Terms:
+    - julho: {State: Generated}
+    - ' JULHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.agosto:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' AGOSTO '}
+    State: Generated
+    Terms:
+    - agosto: {State: Generated}
+    - ' AGOSTO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.setembro:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' SETEMBRO '}
+    State: Generated
+    Terms:
+    - setembro: {State: Generated}
+    - ' SETEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.outubro:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' OUTUBRO '}
+    State: Generated
+    Terms:
+    - outubro: {State: Generated}
+    - ' OUTUBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.novembro:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' NOVEMBRO '}
+    State: Generated
+    Terms:
+    - novembro: {State: Generated}
+    - ' NOVEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.dezembro:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' DEZEMBRO '}
+    State: Generated
+    Terms:
+    - dezembro: {State: Generated}
+    - ' DEZEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_etanol_hidratado_m_3_1990_2020.total:
+    Definition:
+      Binding: {Table: vendas-etanol-hidratado-m3-1990-2020, Column: ' TOTAL '}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - ' TOTAL ': {Type: Noun, State: Generated, Weight: 0.99}
+    - aggregate: {Type: Noun, State: Suggested, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Weight: 0.714}
+
+  vendas_gasolina_aviacao_m_3_1990_2020:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Terms:
+    - vendas gasolina aviacao m 3 1990 2020: {State: Generated}
+    - venda gasolina aviacao m 3 1990 2020: {Type: Noun, State: Generated, Weight: 0.78}
+    - vendas-gasolina-aviacao-m3-1990-2020: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.combustível:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.ano:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' ANO '}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - ' ANO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.estado:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.janeiro:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' JANEIRO '}
+    State: Generated
+    Terms:
+    - janeiro: {State: Generated}
+    - ' JANEIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.fevereiro:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' FEVEREIRO '}
+    State: Generated
+    Terms:
+    - fevereiro: {State: Generated}
+    - ' FEVEREIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.março:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' MARÇO '}
+    State: Generated
+    Terms:
+    - março: {State: Generated}
+    - ' MARÇO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.abril:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' ABRIL '}
+    State: Generated
+    Terms:
+    - abril: {State: Generated}
+    - ' ABRIL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.maio:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' MAIO '}
+    State: Generated
+    Terms:
+    - maio: {State: Generated}
+    - ' MAIO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.junho:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' JUNHO '}
+    State: Generated
+    Terms:
+    - junho: {State: Generated}
+    - ' JUNHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.julho:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' JULHO '}
+    State: Generated
+    Terms:
+    - julho: {State: Generated}
+    - ' JULHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.agosto:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' AGOSTO '}
+    State: Generated
+    Terms:
+    - agosto: {State: Generated}
+    - ' AGOSTO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.setembro:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' SETEMBRO '}
+    State: Generated
+    Terms:
+    - setembro: {State: Generated}
+    - ' SETEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.outubro:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' OUTUBRO '}
+    State: Generated
+    Terms:
+    - outubro: {State: Generated}
+    - ' OUTUBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.novembro:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' NOVEMBRO '}
+    State: Generated
+    Terms:
+    - novembro: {State: Generated}
+    - ' NOVEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.dezembro:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' DEZEMBRO '}
+    State: Generated
+    Terms:
+    - dezembro: {State: Generated}
+    - ' DEZEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_aviacao_m_3_1990_2020.total:
+    Definition:
+      Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020, Column: ' TOTAL '}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - ' TOTAL ': {Type: Noun, State: Generated, Weight: 0.99}
+    - aggregate: {Type: Noun, State: Suggested, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Weight: 0.714}
+
+  vendas_gasolina_c_m_3_1990_2020:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Terms:
+    - vendas gasolina c m 3 1990 2020: {State: Generated}
+    - venda gasolina c m 3 1990 2020: {Type: Noun, State: Generated, Weight: 0.78}
+    - vendas-gasolina-c-m3-1990-2020: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.combustível:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.ano:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' ANO '}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - ' ANO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.estado:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.janeiro:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' JANEIRO '}
+    State: Generated
+    Terms:
+    - janeiro: {State: Generated}
+    - ' JANEIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.fevereiro:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' FEVEREIRO '}
+    State: Generated
+    Terms:
+    - fevereiro: {State: Generated}
+    - ' FEVEREIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.março:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' MARÇO '}
+    State: Generated
+    Terms:
+    - março: {State: Generated}
+    - ' MARÇO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.abril:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' ABRIL '}
+    State: Generated
+    Terms:
+    - abril: {State: Generated}
+    - ' ABRIL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.maio:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' MAIO '}
+    State: Generated
+    Terms:
+    - maio: {State: Generated}
+    - ' MAIO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.junho:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' JUNHO '}
+    State: Generated
+    Terms:
+    - junho: {State: Generated}
+    - ' JUNHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.julho:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' JULHO '}
+    State: Generated
+    Terms:
+    - julho: {State: Generated}
+    - ' JULHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.agosto:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' AGOSTO '}
+    State: Generated
+    Terms:
+    - agosto: {State: Generated}
+    - ' AGOSTO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.setembro:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' SETEMBRO '}
+    State: Generated
+    Terms:
+    - setembro: {State: Generated}
+    - ' SETEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.outubro:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' OUTUBRO '}
+    State: Generated
+    Terms:
+    - outubro: {State: Generated}
+    - ' OUTUBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.novembro:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' NOVEMBRO '}
+    State: Generated
+    Terms:
+    - novembro: {State: Generated}
+    - ' NOVEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.dezembro:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' DEZEMBRO '}
+    State: Generated
+    Terms:
+    - dezembro: {State: Generated}
+    - ' DEZEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_gasolina_c_m_3_1990_2020.total:
+    Definition:
+      Binding: {Table: vendas-gasolina-c-m3-1990-2020, Column: ' TOTAL '}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - ' TOTAL ': {Type: Noun, State: Generated, Weight: 0.99}
+    - aggregate: {Type: Noun, State: Suggested, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Weight: 0.714}
+
+  vendas_glp_m_3_1990_2020:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Terms:
+    - vendas glp m 3 1990 2020: {State: Generated}
+    - venda glp m 3 1990 2020: {Type: Noun, State: Generated, Weight: 0.78}
+    - vendas-glp-m3-1990-2020: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.combustível:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.ano:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' ANO '}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - ' ANO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.estado:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.janeiro:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' JANEIRO '}
+    State: Generated
+    Terms:
+    - janeiro: {State: Generated}
+    - ' JANEIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.fevereiro:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' FEVEREIRO '}
+    State: Generated
+    Terms:
+    - fevereiro: {State: Generated}
+    - ' FEVEREIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.março:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' MARÇO '}
+    State: Generated
+    Terms:
+    - março: {State: Generated}
+    - ' MARÇO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.abril:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' ABRIL '}
+    State: Generated
+    Terms:
+    - abril: {State: Generated}
+    - ' ABRIL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.maio:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' MAIO '}
+    State: Generated
+    Terms:
+    - maio: {State: Generated}
+    - ' MAIO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.junho:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' JUNHO '}
+    State: Generated
+    Terms:
+    - junho: {State: Generated}
+    - ' JUNHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.julho:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' JULHO '}
+    State: Generated
+    Terms:
+    - julho: {State: Generated}
+    - ' JULHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.agosto:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' AGOSTO '}
+    State: Generated
+    Terms:
+    - agosto: {State: Generated}
+    - ' AGOSTO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.setembro:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' SETEMBRO '}
+    State: Generated
+    Terms:
+    - setembro: {State: Generated}
+    - ' SETEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.outubro:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' OUTUBRO '}
+    State: Generated
+    Terms:
+    - outubro: {State: Generated}
+    - ' OUTUBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.novembro:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' NOVEMBRO '}
+    State: Generated
+    Terms:
+    - novembro: {State: Generated}
+    - ' NOVEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.dezembro:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' DEZEMBRO '}
+    State: Generated
+    Terms:
+    - dezembro: {State: Generated}
+    - ' DEZEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_glp_m_3_1990_2020.total:
+    Definition:
+      Binding: {Table: vendas-glp-m3-1990-2020, Column: ' TOTAL '}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - ' TOTAL ': {Type: Noun, State: Generated, Weight: 0.99}
+    - aggregate: {Type: Noun, State: Suggested, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Weight: 0.714}
+
+  vendas_querosene_aviacao_m_3_1990_2020:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Terms:
+    - vendas querosene aviacao m 3 1990 2020: {State: Generated}
+    - venda querosene aviacao m 3 1990 2020: {Type: Noun, State: Generated, Weight: 0.78}
+    - vendas-querosene-aviacao-m3-1990-2020: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.combustível:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.ano:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' ANO '}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - ' ANO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.estado:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.janeiro:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' JANEIRO '}
+    State: Generated
+    Terms:
+    - janeiro: {State: Generated}
+    - ' JANEIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.fevereiro:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' FEVEREIRO '}
+    State: Generated
+    Terms:
+    - fevereiro: {State: Generated}
+    - ' FEVEREIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.março:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' MARÇO '}
+    State: Generated
+    Terms:
+    - março: {State: Generated}
+    - ' MARÇO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.abril:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' ABRIL '}
+    State: Generated
+    Terms:
+    - abril: {State: Generated}
+    - ' ABRIL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.maio:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' MAIO '}
+    State: Generated
+    Terms:
+    - maio: {State: Generated}
+    - ' MAIO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.junho:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' JUNHO '}
+    State: Generated
+    Terms:
+    - junho: {State: Generated}
+    - ' JUNHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.julho:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' JULHO '}
+    State: Generated
+    Terms:
+    - julho: {State: Generated}
+    - ' JULHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.agosto:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' AGOSTO '}
+    State: Generated
+    Terms:
+    - agosto: {State: Generated}
+    - ' AGOSTO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.setembro:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' SETEMBRO '}
+    State: Generated
+    Terms:
+    - setembro: {State: Generated}
+    - ' SETEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.outubro:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' OUTUBRO '}
+    State: Generated
+    Terms:
+    - outubro: {State: Generated}
+    - ' OUTUBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.novembro:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' NOVEMBRO '}
+    State: Generated
+    Terms:
+    - novembro: {State: Generated}
+    - ' NOVEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.dezembro:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' DEZEMBRO '}
+    State: Generated
+    Terms:
+    - dezembro: {State: Generated}
+    - ' DEZEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_aviacao_m_3_1990_2020.total:
+    Definition:
+      Binding: {Table: vendas-querosene-aviacao-m3-1990-2020, Column: ' TOTAL '}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - ' TOTAL ': {Type: Noun, State: Generated, Weight: 0.99}
+    - aggregate: {Type: Noun, State: Suggested, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Weight: 0.714}
+
+  vendas_querosene_iluminante_m_3_1990_2020:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Terms:
+    - vendas querosene iluminante m 3 1990 2020: {State: Generated}
+    - venda querosene iluminante m 3 1990 2020: {Type: Noun, State: Generated, Weight: 0.78}
+    - vendas-querosene-iluminante-m3-1990-2020: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.combustível:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.ano:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' ANO '}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+    - ' ANO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.estado:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.janeiro:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' JANEIRO '}
+    State: Generated
+    Terms:
+    - janeiro: {State: Generated}
+    - ' JANEIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.fevereiro:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' FEVEREIRO '}
+    State: Generated
+    Terms:
+    - fevereiro: {State: Generated}
+    - ' FEVEREIRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.março:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' MARÇO '}
+    State: Generated
+    Terms:
+    - março: {State: Generated}
+    - ' MARÇO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.abril:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' ABRIL '}
+    State: Generated
+    Terms:
+    - abril: {State: Generated}
+    - ' ABRIL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.maio:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' MAIO '}
+    State: Generated
+    Terms:
+    - maio: {State: Generated}
+    - ' MAIO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.junho:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' JUNHO '}
+    State: Generated
+    Terms:
+    - junho: {State: Generated}
+    - ' JUNHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.julho:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' JULHO '}
+    State: Generated
+    Terms:
+    - julho: {State: Generated}
+    - ' JULHO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.agosto:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' AGOSTO '}
+    State: Generated
+    Terms:
+    - agosto: {State: Generated}
+    - ' AGOSTO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.setembro:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' SETEMBRO '}
+    State: Generated
+    Terms:
+    - setembro: {State: Generated}
+    - ' SETEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.outubro:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' OUTUBRO '}
+    State: Generated
+    Terms:
+    - outubro: {State: Generated}
+    - ' OUTUBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.novembro:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' NOVEMBRO '}
+    State: Generated
+    Terms:
+    - novembro: {State: Generated}
+    - ' NOVEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.dezembro:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' DEZEMBRO '}
+    State: Generated
+    Terms:
+    - dezembro: {State: Generated}
+    - ' DEZEMBRO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_querosene_iluminante_m_3_1990_2020.total:
+    Definition:
+      Binding: {Table: vendas-querosene-iluminante-m3-1990-2020, Column: ' TOTAL '}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - ' TOTAL ': {Type: Noun, State: Generated, Weight: 0.99}
+    - aggregate: {Type: Noun, State: Suggested, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Weight: 0.714}
+
+  vendas_comb_distribuidora:
+    Definition:
+      Binding: {Table: Vendas_Comb_Distribuidoras}
+    State: Generated
+    Terms:
+    - vendas comb distribuidora: {State: Generated}
+    - venda comb distribuidora: {Type: Noun, State: Generated, Weight: 0.78}
+    - Vendas_Comb_Distribuidoras: {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_comb_distribuidora.combustível:
+    Definition:
+      Binding: {Table: Vendas_Comb_Distribuidoras, Column: 'COMBUSTÍVEL '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - combustível: {State: Generated}
+    - 'COMBUSTÍVEL ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_comb_distribuidora.estado:
+    Definition:
+      Binding: {Table: Vendas_Comb_Distribuidoras, Column: ' ESTADO '}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estado: {State: Generated}
+    - ' ESTADO ': {Type: Noun, State: Generated, Weight: 0.99}
+
+  vendas_comb_distribuidora.dado:
+    Definition:
+      Binding: {Table: Vendas_Comb_Distribuidoras, Column: DADOS}
+    State: Generated
+    Terms:
+    - dado: {State: Generated}
+
+  vendas_comb_distribuidora.valor:
+    Definition:
+      Binding: {Table: Vendas_Comb_Distribuidoras, Column: Valor}
+    State: Generated
+    Terms:
+    - valor: {State: Generated}
+    - courage: {Type: Noun, State: Suggested, Weight: 0.491}
+    - bravery: {Type: Noun, State: Suggested, Weight: 0.491}
+    - heroism: {Type: Noun, State: Suggested, Weight: 0.491}
+    - fearlessness: {Type: Noun, State: Suggested, Weight: 0.491}
+    - boldness: {Type: Noun, State: Suggested, Weight: 0.491}
+    - gallantry: {Type: Noun, State: Suggested, Weight: 0.491}
+    - lionheartedness: {Type: Noun, State: Suggested, Weight: 0.491}
+    - pluck: {Type: Noun, State: Suggested, Weight: 0.476}
+    - spirit: {Type: Noun, State: Suggested, Weight: 0.476}
+    - nerve: {Type: Noun, State: Suggested, Weight: 0.476}
+
+  vendas_comb_distribuidora.atributo:
+    Definition:
+      Binding: {Table: Vendas_Comb_Distribuidoras, Column: Atributo}
+    State: Generated
+    Terms:
+    - atributo: {State: Generated}
+
+  vendas_comb_distribuidora.ano:
+    Definition:
+      Binding: {Table: Vendas_Comb_Distribuidoras, Column: ANO}
+    State: Generated
+    Terms:
+    - ano: {State: Generated}
+
+Relationships:
+  produto_is_named_produto:
+    Binding: {Table: produtos}
+    State: Generated
+    Phrasings:
+    - Name:
+        Subject: produto
+        Name: produto.produto
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: produto.produto}
+      State: Generated
+      Weight: 0.99
+
+  produto_has_cod_prod:
+    Binding: {Table: produtos}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: produto, Object: produto.cod_prod}
+      State: Generated
+      Weight: 0.99
+
+  estados_bra_has_unidade_federativa:
+    Binding: {Table: EstadosBra}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: estados_bra, Object: estados_bra.unidade_federativa}
+      State: Generated
+      Weight: 0.99
+
+  estados_bra_has_un__da_federação:
+    Binding: {Table: EstadosBra}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: estados_bra, Object: estados_bra.un__da_federação}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_ano:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_janeiro:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.janeiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_fevereiro:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.fevereiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_março:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.março}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_abril:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.abril}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_maio:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.maio}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_junho:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.junho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_julho:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.julho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_agosto:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.agosto}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_setembro:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.setembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_outubro:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.outubro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_novembro:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.novembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_dezembro:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.dezembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_total:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: vendas_oleo_combustivel_m_3_1990_2020.total}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_ano:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_janeiro:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.janeiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_fevereiro:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.fevereiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_março:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.março}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_abril:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.abril}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_maio:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.maio}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_junho:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.junho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_julho:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.julho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_agosto:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.agosto}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_setembro:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.setembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_outubro:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.outubro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_novembro:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.novembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_dezembro:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.dezembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_total:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: vendas_oleo_diesel_m_3_1990_2020.total}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_ano:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_janeiro:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.janeiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_fevereiro:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.fevereiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_março:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.março}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_abril:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.abril}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_maio:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.maio}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_junho:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.junho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_julho:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.julho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_agosto:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.agosto}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_setembro:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.setembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_outubro:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.outubro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_novembro:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.novembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_dezembro:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.dezembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_total:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: vendas_etanol_hidratado_m_3_1990_2020.total}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_ano:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_janeiro:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.janeiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_fevereiro:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.fevereiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_março:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.março}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_abril:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.abril}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_maio:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.maio}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_junho:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.junho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_julho:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.julho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_agosto:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.agosto}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_setembro:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.setembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_outubro:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.outubro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_novembro:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.novembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_dezembro:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.dezembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_total:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: vendas_gasolina_aviacao_m_3_1990_2020.total}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_ano:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_janeiro:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.janeiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_fevereiro:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.fevereiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_março:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.março}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_abril:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.abril}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_maio:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.maio}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_junho:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.junho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_julho:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.julho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_agosto:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.agosto}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_setembro:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.setembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_outubro:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.outubro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_novembro:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.novembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_dezembro:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.dezembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_total:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: vendas_gasolina_c_m_3_1990_2020.total}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_ano:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_janeiro:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.janeiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_fevereiro:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.fevereiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_março:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.março}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_abril:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.abril}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_maio:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.maio}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_junho:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.junho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_julho:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.julho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_agosto:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.agosto}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_setembro:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.setembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_outubro:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.outubro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_novembro:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.novembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_dezembro:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.dezembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_total:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: vendas_glp_m_3_1990_2020.total}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_ano:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_janeiro:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.janeiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_fevereiro:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.fevereiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_março:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.março}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_abril:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.abril}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_maio:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.maio}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_junho:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.junho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_julho:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.julho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_agosto:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.agosto}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_setembro:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.setembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_outubro:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.outubro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_novembro:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.novembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_dezembro:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.dezembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_total:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: vendas_querosene_aviacao_m_3_1990_2020.total}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_ano:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_janeiro:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.janeiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_fevereiro:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.fevereiro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_março:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.março}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_abril:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.abril}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_maio:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.maio}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_junho:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.junho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_julho:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.julho}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_agosto:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.agosto}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_setembro:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.setembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_outubro:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.outubro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_novembro:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.novembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_dezembro:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.dezembro}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_total:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: vendas_querosene_iluminante_m_3_1990_2020.total}
+      State: Generated
+      Weight: 0.99
+
+  vendas_comb_distribuidora_has_dado:
+    Binding: {Table: Vendas_Comb_Distribuidoras}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_comb_distribuidora, Object: vendas_comb_distribuidora.dado}
+      State: Generated
+      Weight: 0.99
+
+  vendas_comb_distribuidora_has_valor:
+    Binding: {Table: Vendas_Comb_Distribuidoras}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_comb_distribuidora, Object: vendas_comb_distribuidora.valor}
+      State: Generated
+      Weight: 0.99
+
+  vendas_comb_distribuidora_has_atributo:
+    Binding: {Table: Vendas_Comb_Distribuidoras}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_comb_distribuidora, Object: vendas_comb_distribuidora.atributo}
+      State: Generated
+      Weight: 0.99
+
+  vendas_comb_distribuidora_has_ano:
+    Binding: {Table: Vendas_Comb_Distribuidoras}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_comb_distribuidora, Object: vendas_comb_distribuidora.ano}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_produto:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_oleo_combustivel_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_combustivel_m_3_1990_2020_has_estados_bra:
+    Binding: {Table: vendas-oleo-combustivel-m3-1990-2020}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_combustivel_m_3_1990_2020, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_oleo_combustivel_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_estados_bra:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_oleo_diesel_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_oleo_diesel_m_3_1990_2020_has_produto:
+    Binding: {Table: vendas-oleo-diesel-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_oleo_diesel_m_3_1990_2020, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_oleo_diesel_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_estados_bra:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_etanol_hidratado_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_etanol_hidratado_m_3_1990_2020_has_produto:
+    Binding: {Table: vendas-etanol-hidratado-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_etanol_hidratado_m_3_1990_2020, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_etanol_hidratado_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_estados_bra:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_gasolina_aviacao_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_aviacao_m_3_1990_2020_has_produto:
+    Binding: {Table: vendas-gasolina-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_aviacao_m_3_1990_2020, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_gasolina_aviacao_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_estados_bra:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_gasolina_c_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_gasolina_c_m_3_1990_2020_has_produto:
+    Binding: {Table: vendas-gasolina-c-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_gasolina_c_m_3_1990_2020, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_gasolina_c_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_estados_bra:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_glp_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_glp_m_3_1990_2020_has_produto:
+    Binding: {Table: vendas-glp-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_glp_m_3_1990_2020, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_glp_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_estados_bra:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_querosene_aviacao_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_aviacao_m_3_1990_2020_has_produto:
+    Binding: {Table: vendas-querosene-aviacao-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_aviacao_m_3_1990_2020, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_querosene_aviacao_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_estados_bra:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_querosene_iluminante_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_querosene_iluminante_m_3_1990_2020_has_produto:
+    Binding: {Table: vendas-querosene-iluminante-m3-1990-2020}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_querosene_iluminante_m_3_1990_2020, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_querosene_iluminante_m_3_1990_2020}
+      State: Generated
+      Weight: 0.99
+
+  vendas_comb_distribuidora_has_estados_bra:
+    Binding: {Table: Vendas_Comb_Distribuidoras}
+    State: Generated
+    Roles:
+      estados_bra:
+        Target: estados_bra
+        Nouns:
+        - estado: {State: Generated}
+    Phrasings:
+    - Attribute: {Subject: vendas_comb_distribuidora, Object: estados_bra}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: estados_bra, Object: vendas_comb_distribuidora}
+      State: Generated
+      Weight: 0.99
+
+  vendas_comb_distribuidora_has_produto:
+    Binding: {Table: Vendas_Comb_Distribuidoras}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: vendas_comb_distribuidora, Object: produto}
+      State: Generated
+      Weight: 0.99
+    - Attribute: {Subject: produto, Object: vendas_comb_distribuidora}
+      State: Generated
+      Weight: 0.99
+
