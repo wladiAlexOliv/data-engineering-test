@@ -9,3 +9,5 @@ https://dados.gov.br/dataset?tags=vendas&q=anp
 
 O arquivo POWER BI é o Teste_Wladiston_gitHub_Raizen.pbix
 e segue também um print do relatorio em PDF Teste_Wladiston_gitHub_Raizen.pdf
+
+Subi uma versão yaml que pode ser aberto pelo Python.
